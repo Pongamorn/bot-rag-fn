@@ -96,8 +96,8 @@ export default function DashboardTable() {
         <DataGrid
           rows={rows}
           columns={getColumns(handleImageClick)}
-          paginationModel={{ page: 0, pageSize: 5 }}
-          pageSizeOptions={[5]}
+          // paginationModel={{ page: 0, pageSize: 5 }}
+          // pageSizeOptions={[5]}
           disableRowSelectionOnClick
           autoHeight
           getRowId={(row) => row.id}
@@ -125,6 +125,13 @@ export default function DashboardTable() {
               "สินค้าไม่ร่วมโปรโมชั่น",
               "สินค้าเกินระยะเวลาโปรโมชั่น",
               "สินค้าเคยถูกส่งมาแล้ว",
+              "บิลซ้ำ",
+              "บิลปกติ",
+              "กล้องเปิดไม่ได้",
+              "รอการอนุมัติคำร้อง",
+              "เงินไม่เข้า",
+              "ผมไม่เข้าใจคำสั่งของคุณ",
+              "ลงทะเบียนไม่ได้",
             ]}
             value={editTitle}
             onInputChange={(_, newValue) => setEditTitle(newValue)}
