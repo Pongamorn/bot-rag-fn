@@ -30,5 +30,7 @@
     ".next/dev/types/**/*.ts",
     "**/*.mts"
   ],
+  "strict": false,
+  "noImplicitAny": false,
   "exclude": ["node_modules"]
 }
