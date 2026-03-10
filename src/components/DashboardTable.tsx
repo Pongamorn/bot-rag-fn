@@ -96,8 +96,8 @@ export default function DashboardTable() {
         <DataGrid
           rows={rows}
           columns={getColumns(handleImageClick)}
-          pageSize={5}
-          rowsPerPageOptions={[5]}
+          paginationModel={{ page: 0, pageSize: 5 }}
+          pageSizeOptions={[5]}
           disableRowSelectionOnClick
           autoHeight
           getRowId={(row) => row.id}
